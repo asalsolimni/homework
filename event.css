@@ -1,0 +1,49 @@
+body{
+    background: #f1f5f9
+    font-family: Arial, sans-serif;
+}
+.event-card {
+    background: white;
+    width : 400px;
+    padding : 24px;
+    border-radius : 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+}
+.badge{
+    background: #fee2e2;
+    color : #dc2626;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 6px 16px;
+    border-radius: 999px;
+}
+h2 {
+    color: #0f172a;
+    font-size: 32px;
+    margin: 16px 0 12px;
+}
+.meta{
+    color: #64748b;
+    font-size: 18px;
+}
+.desc{
+    color: #475569;
+    font-size: 18px;
+    line-height: 1.6;
+}
+.btn-register {
+    background: #dc3a3a;
+    color: white;
+    font-size:20px;
+    font-weight: bold;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.btn-register:hover{
+    background: #b91c1c;
+}
