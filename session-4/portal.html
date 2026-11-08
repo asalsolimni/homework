@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Summit 2026 - Registration Portal</title>
+  <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="brand-logo">NEXUS SUMMIT 2026</a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">Overview</a></li>
+        <li><a href="#schedule">Speakers</a></li>
+        <li><a href="#register">RSVP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="portal-main">
+  
+    <section class="hero" id="about">
+      <span class="badge-eyebrow">OCTOBER 24–25 • SAN FRANCISCO & VIRTUAL</span>
+      <h1>Global Developer Architecture Summit</h1>
+      <p class="lead">Join 2,500+ engineers for two days of modern web architecture, responsive layouts, and systems design.</p>
+    </section>
+
+    <section class="registration-section" id="register">
+      <div class="form-card">
+        <h2>Reserve Your Attendee Pass</h2>
+        
+        <form action="/register" method="POST">
+         
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">First Name</label>
+              <input type="text" id="first-name" name="first-name" required placeholder="e.g. Carlos">
+            </div>
+            <div class="form-group">
+              <label for="last-name">Last Name</label>
+              <input type="text" id="last-name" name="last-name" required placeholder="e.g. Santana">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="user-email">Work Email Address</label>
+            <input type="email" id="user-email" name="email" required placeholder="carlos@engineering.io">
+          </div>
+
+          <fieldset class="radio-fieldset">
+            <legend>Attendance Format</legend>
+            <div class="radio-options">
+              <label class="radio-pill">
+                <input type="radio" name="mode" value="in-person" checked> In-Person Pass ($199)
+              </label>
+              <label class="radio-pill">
+                <input type="radio" name="mode" value="virtual"> Virtual Stream (Free)
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <label for="track-select">Engineering Workshop Track</label>
+            <select id="track-select" name="track">
+              <option value="frontend">Frontend Architecture & Flexbox Layouts</option>
+              <option value="systems">Distributed Systems & Cloud Infrastructure</option>
+              <option value="ai">AI Auditing & Ethical Engineering</option>
+            </select>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the Developer Code of Conduct</label>
+          </div>
+
+          <button type="submit" class="btn-submit">Complete Registration — Instant Confirmation &rarr;</button>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nexus Engineering Summit • Designed with Mobile-First Responsive CSS</p>
+  </footer>
+
+</body>
+</html>
