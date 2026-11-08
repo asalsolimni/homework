@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charest="UF-8">
+        <title>Event Portal</title>
+    </head>
+    <body>
+        <main>
+          <h1>Event Portal</h1>
+            <form action="/register" method="POST">
+                <h2>Attendee Registration</h2>
+                <lable for="fullname">Full Name</lable>
+                 <input type="text" id="fullname" name="fullname">
+                <br><br>
+
+                <lable for="email">Email</lable>
+                 <input type="email" id="email" name="emil">
+                <br><br>
+                <label for="track">Track</label>
+                 <select id="track" name="track">
+                   <option value="frontend">Frontend</option>
+                   <option value="backend">Backend</option>
+                   <option value="design">UI Design</option>
+                 </select>
+                <br><br>
+                <p>Attendance Mode</p>
+      <input type="radio" id="inperson" name="mode" value="inperson">
+        <label for="inperson">In-Person</label>
+      <input type="radio" id="virtual" name="mode" value="virtual">
+        <label for="virtual">Virtual</label>
+      <br><br>
+        <label for="requests">Special Requests</label>
+      <br><br>
+      <textarea id="requests" name="requests" rows="4" cols="40"></textarea>
+      <br><br>
+      <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms</label>
+      <br><br>
+      <button type="submit">Register</button>
+        </form>
+    <table>
+      <caption>Schedule and Track Matrix</caption>
+      <thead>
+        <tr>
+          <th scope="col">Time</th>
+          <th scope="col">Session</th>
+          <th scope="col">Room</th>
+          <th scope="col">Instructor</th>
+          <th scope="col">Pricing</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">09:00 AM</th>
+          <td>HTML5 and DOM Deep Dive</td>
+          <td>Hall A</td>
+          <td>Instructor One</td>
+          <td>Included</td>
+        </tr>
+        <tr>
+          <th scope="row">11:00 AM</th>
+          <td>Forms and Accessibility</td>
+          <td>Lab 2</td>
+          <td>Instructor Two</td>
+          <td>$49</td>
+        </tr>
+        <tr>
+          <th scope="row">01:00 PM</th>
+          <td>CSS Foundations</td>
+          <td>Hall B</td>
+          <td>Instructor Three</td>
+          <td>$49</td>
+        </tr>
+        <tr>
+          <th scope="row">03:00 PM</th>
+          <td>Modern Layouts</td>
+          <td>Lab 1</td>
+          <td>Instructor Four</td>
+          <td>$59</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="5">Ticket price includes lunch and all workshop materials.</td>
+        </tr>
+      </tfoot>
+   </table>
+        </main>
+    </body>
+</html>
